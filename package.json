@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/victorlitvinenko/frontend-project-lvl1/issues"
   },
-  "homepage": "https://github.com/victorlitvinenko/frontend-project-lvl1#readme"
+  "homepage": "https://github.com/victorlitvinenko/frontend-project-lvl1#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.6.2",
+    "@babel/core": "^7.6.2",
+    "@babel/node": "^7.6.2",
+    "@babel/preset-env": "^7.6.2"
+  }
 }
