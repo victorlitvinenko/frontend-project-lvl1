@@ -2,4 +2,5 @@
 import * as libs from '..';
 
 libs.showWelcomeText();
-libs.meetAndGreet();
+libs.showEvenRules();
+libs.playEvenGame();
