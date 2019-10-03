@@ -1,15 +1,15 @@
 {
   "name": "frontend-victorlitvinenko-lvl1",
-  "version": "1.6.1",
-  "description": "",
+  "version": "1.6.2",
+  "description": "These are some brain training games.",
   "main": "index.js",
   "bin": {
-    "brain-games": "dist/bin/brain-games.js",
-    "brain-even": "dist/bin/brain-even.js",
-    "brain-calc": "dist/bin/brain-calc.js",
-    "brain-gcd": "dist/bin/brain-gcd.js",
-    "brain-progression": "dist/bin/brain-progression.js",
-    "brain-prime": "dist/bin/brain-prime.js"
+    "brain-games": "dist/bin/games/brain-games.js",
+    "brain-even": "dist/bin/games/brain-even.js",
+    "brain-calc": "dist/bin/games/brain-calc.js",
+    "brain-gcd": "dist/bin/games/brain-gcd.js",
+    "brain-progression": "dist/bin/games/brain-progression.js",
+    "brain-prime": "dist/bin/games/brain-prime.js"
   },
   "files": [
     "dist"
@@ -23,7 +23,12 @@
     "type": "git",
     "url": "git+https://github.com/victorlitvinenko/frontend-project-lvl1.git"
   },
-  "author": "",
+  "keywords": [
+    "brain",
+    "training",
+    "games"
+  ],
+  "author": "Victor Litvinenko",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/victorlitvinenko/frontend-project-lvl1/issues"

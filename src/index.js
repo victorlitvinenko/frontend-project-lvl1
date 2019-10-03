@@ -1,8 +1,6 @@
 import readlineSync from 'readline-sync';
 import { car, cdr } from '@hexlet/pairs';
-
-const ROUNDS = 3;
-const WELCOME_TEXT = 'Welcome to the Brain Games!';
+import { ROUNDS, WELCOME_TEXT } from './constants';
 
 const showWelcomeText = () => console.log(WELCOME_TEXT);
 const showRules = (text) => console.log(`${text}\n`);
