@@ -1,6 +1,4 @@
 #!/usr/bin/env node
-import * as libs from '..';
+import game from '../games/even';
 
-libs.showWelcomeText();
-libs.showEvenRules();
-libs.playEvenGame();
+game();
