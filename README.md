@@ -25,3 +25,7 @@
 ```brain-progession```
 
 [![asciicast](https://asciinema.org/a/psi93AFa3ay9VDdTChXeV2eWl.svg)](https://asciinema.org/a/psi93AFa3ay9VDdTChXeV2eWl)
+
+### Prime numbers
+```brain-prime```
+
