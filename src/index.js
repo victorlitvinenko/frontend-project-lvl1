@@ -1,19 +1,20 @@
 import readlineSync from 'readline-sync';
+import { car, cdr } from '@hexlet/pairs';
 
-export const ROUNDS = 3;
+const ROUNDS = 3;
 const WELCOME_TEXT = 'Welcome to the Brain Games!';
 
-export const showWelcomeText = () => console.log(WELCOME_TEXT);
-export const showRules = (text) => console.log(`${text}\n`);
-export const congratulate = (name) => console.log(`Congratulations, ${name}!`);
+const showWelcomeText = () => console.log(WELCOME_TEXT);
+const showRules = (text) => console.log(`${text}\n`);
+const showCongratulation = (name) => console.log(`Congratulations, ${name}!`);
 
-export const meetAndGreet = () => {
+const meetAndGreet = () => {
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!\n`);
   return name;
 };
 
-export const askQuestion = (name, question, correct) => {
+const askQuestion = (name, question, correct) => {
   const answer = readlineSync.question(`Question: ${question}\nYour answer: `);
   if (answer === correct) {
     console.log('Correct!');
@@ -21,4 +22,16 @@ export const askQuestion = (name, question, correct) => {
   }
   console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correct}'.\nLet's try again, ${name}!`);
   return false;
+};
+
+export default (rules, logics) => {
+  showWelcomeText();
+  showRules(rules);
+  const name = meetAndGreet();
+  for (let i = 0; i < ROUNDS; i += 1) {
+    const data = logics();
+    if (!askQuestion(name, car(data), cdr(data))) return false;
+  }
+  showCongratulation(name);
+  return true;
 };
