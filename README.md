@@ -29,3 +29,4 @@
 ### Prime numbers
 ```brain-prime```
 
+[![asciicast](https://asciinema.org/a/8HtlXCOs25Fx60fWQmIUw6A1P.svg)](https://asciinema.org/a/8HtlXCOs25Fx60fWQmIUw6A1P)
