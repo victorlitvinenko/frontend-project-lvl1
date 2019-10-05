@@ -1,16 +1,6 @@
 import readlineSync from 'readline-sync';
 import { car, cdr } from '@hexlet/pairs';
-import { ROUNDS, WELCOME_TEXT } from './constants';
-
-const showWelcomeText = () => console.log(WELCOME_TEXT);
-const showRules = (text) => console.log(`${text}\n`);
-const showCongratulation = (name) => console.log(`Congratulations, ${name}!`);
-
-const meetAndGreet = () => {
-  const name = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${name}!\n`);
-  return name;
-};
+import { ROUNDS, WELCOME_TEXT } from './settings';
 
 const askQuestion = (name, question, correct) => {
   const answer = readlineSync.question(`Question: ${question}\nYour answer: `);
@@ -23,13 +13,14 @@ const askQuestion = (name, question, correct) => {
 };
 
 export default (rules, logics) => {
-  showWelcomeText();
-  showRules(rules);
-  const name = meetAndGreet();
+  console.log(WELCOME_TEXT);
+  console.log(`${rules}\n`);
+  const name = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${name}!\n`);
   for (let i = 0; i < ROUNDS; i += 1) {
     const data = logics();
     if (!askQuestion(name, car(data), cdr(data))) return false;
   }
-  showCongratulation(name);
+  console.log(`Congratulations, ${name}!`);
   return true;
 };
