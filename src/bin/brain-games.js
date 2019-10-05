@@ -1,5 +1,7 @@
 #!/usr/bin/env node
-import * as libs from '..';
+import readlineSync from 'readline-sync';
+import { WELCOME_TEXT } from '../libs/settings';
 
-libs.showWelcomeText();
-libs.meetAndGreet();
+console.log(WELCOME_TEXT);
+const name = readlineSync.question('May I have your name? ');
+console.log(`Hello, ${name}!\n`);
