@@ -7,7 +7,7 @@ const OPERATIONS_AMOUNT = 3;
 const IS_OPERATION_ADD = 0;
 const IS_OPERATION_SUB = 1;
 const IS_OPERATION_MULT = 2;
-const operators = ['+', '-', '*'];
+const operations = '+-*';
 const description = 'What is the result of the expression?';
 
 const getQuestionAndCorrectAnswer = () => {
@@ -15,7 +15,7 @@ const getQuestionAndCorrectAnswer = () => {
   const num2 = random(1, EXPRESSION_MAX_NUMBER);
   const operation = random(0, OPERATIONS_AMOUNT);
 
-  const question = `${num1} ${operators[operation]} ${num2}`;
+  const question = `${num1} ${operations.substr(operation, 1)} ${num2}`;
   let correctAnswer;
   switch (operation) {
     case IS_OPERATION_ADD:
