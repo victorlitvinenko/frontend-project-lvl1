@@ -22,7 +22,7 @@
 [![asciicast](https://asciinema.org/a/OgX2PWRHjG68a1tBTxk90pNjm.svg)](https://asciinema.org/a/OgX2PWRHjG68a1tBTxk90pNjm)
 
 ### Missing numbers in the progression
-```brain-progession```
+```brain-progression```
 
 [![asciicast](https://asciinema.org/a/3wDqeVywWNn8VhUB2jbcjUbVo.svg)](https://asciinema.org/a/3wDqeVywWNn8VhUB2jbcjUbVo)
 
