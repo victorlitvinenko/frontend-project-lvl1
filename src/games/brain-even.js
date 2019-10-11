@@ -1,6 +1,6 @@
 import { cons } from '@hexlet/pairs';
 import random from '../libs/random';
-import playGame from '../engine';
+import playGame from '..';
 
 const EVEN_MAX = 100;
 const description = 'Answer "yes" if the number is even, otherwise answer "no".';

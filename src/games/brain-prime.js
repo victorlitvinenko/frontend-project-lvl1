@@ -1,12 +1,13 @@
 import { cons } from '@hexlet/pairs';
 import random from '../libs/random';
-import playGame from '../engine';
+import playGame from '..';
 
 const isPrime = (num) => {
+  if (num < 2) return false;
   for (let i = 2; i <= num / 2; i += 1) {
     if (num % i === 0) return false;
   }
-  return num > 1;
+  return true;
 };
 const PRIME_MAX = 100;
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
