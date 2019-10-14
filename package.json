@@ -1,6 +1,6 @@
 {
   "name": "frontend-victorlitvinenko-lvl1",
-  "version": "1.8.2",
+  "version": "1.8.3",
   "description": "These are some brain training games.",
   "bin": {
     "brain-even": "dist/bin/brain-even.js",
