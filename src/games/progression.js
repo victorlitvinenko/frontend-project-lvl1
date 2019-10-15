@@ -12,15 +12,15 @@ const getQuestionAndCorrectAnswer = () => {
   const hiddenElementPosition = random(0, amount - 1);
   const step = random(minStep, maxStep);
   const correctAnswer = firstElement + hiddenElementPosition * step;
-  let result = '';
+  let question = '';
   for (let i = 0; i < amount; i += 1) {
     if (i === hiddenElementPosition) {
-      result = `${result}.. `;
+      question = `${question}.. `;
     } else {
-      result = `${result}${i * step + firstElement} `;
+      question = `${question}${i * step + firstElement} `;
     }
   }
-  return cons(result.trim(), String(correctAnswer));
+  return cons(question.trim(), String(correctAnswer));
 };
 
 export default () => playGame(description, getQuestionAndCorrectAnswer);

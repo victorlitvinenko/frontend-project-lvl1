@@ -9,11 +9,11 @@ const isPrime = (num) => {
   }
   return true;
 };
-const maxNumber = 100;
+const max = 100;
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const getQuestionAndCorrectAnswer = () => {
-  const question = random(1, maxNumber);
+  const question = random(1, max);
   const correctAnswer = isPrime(question) ? 'yes' : 'no';
   return cons(question, correctAnswer);
 };
